@@ -1,0 +1,109 @@
+/* FONTS */
+@font-face {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/commissioner-v3-latin-regular.woff2") format("woff2"),
+    url("../fonts/commissioner-v3-latin-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/commissioner-v3-latin-500.woff2") format("woff2"),
+    url("../fonts/commissioner-v3-latin-500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/commissioner-v3-latin-700.woff2") format("woff2"),
+    url("../fonts/commissioner-v3-latin-700.woff") format("woff");
+}
+
+/* CUSTOM PROPERTIES */
+:root {
+  --light-bg: rgba(47, 47, 47, 0.05);
+  --grey: #7a7a7a;
+  --accent: #3cb3ab;
+  --accent-hover: #147a73;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Commissioner", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--grey);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1150px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* SITENAV */
+.sitenav {
+  padding-top: 48px;
+  padding-bottom: 60px;
+  background-image: linear-gradient(
+  180deg,
+  rgba(0, 0, 0, 0.6) 0%,
+  rgba(0, 0, 0, 0.0001) 100%);
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.sitenav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* LOGO */
+.logo-img {
+  display: block;
+}
+
+.sitenav-list {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sitenav-item {
+  margin-left: 33px;
+}
+
+.sitenav-link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sitenav-link:hover {
+  text-decoration: underline;
+}
