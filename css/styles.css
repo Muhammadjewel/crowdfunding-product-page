@@ -126,6 +126,10 @@ img {
   justify-content: center;
 }
 
+.product-page-hero {
+  height: 400px;
+}
+
 .product-page-container {
   max-width: 770px;
 }
