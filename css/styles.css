@@ -63,6 +63,15 @@ img {
   margin-right: auto;
 }
 
+/* SITE-HEADER */
+.site-header {
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
 /* SITENAV */
 .sitenav {
   padding-top: 48px;
