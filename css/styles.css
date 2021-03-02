@@ -59,6 +59,17 @@ img {
   height: auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container {
   max-width: 1150px;
   padding-left: 20px;
@@ -223,4 +234,61 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+/* STATS */
+.stats-table {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.stats-table-row {
+  display: flex;
+}
+
+.stats-table th {
+  font-size: 15px;
+  line-height: 18px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.stats-table td {
+  margin-bottom: 8px;
+  font-size: 32px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000;
+}
+
+.stats-table-amount-heading,
+.stats-table-amount-data {
+  width: 180px;
+}
+
+.stats-table-backers-heading,
+.stats-table-backers-data {
+  width: 227px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.stats-table-countdown-heading,
+.stats-table-countdown-data {
+  flex-grow: 1;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.stats-table-backers-heading::before,
+.stats-table-backers-heading::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: #000;
 }
