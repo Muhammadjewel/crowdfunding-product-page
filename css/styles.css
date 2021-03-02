@@ -187,6 +187,7 @@ img {
 
 .product-page-container {
   max-width: 770px;
+  margin-top: -90px;
 }
 
 /* PRODUCT */
