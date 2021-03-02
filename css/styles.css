@@ -65,6 +65,15 @@ img {
   margin-right: auto;
 }
 
+/* CARD */
+.card {
+  padding: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  margin-bottom: 24px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
 /* SITE-HEADER */
 .site-header {
   position: fixed;
@@ -133,4 +142,32 @@ img {
 
 .product-page-container {
   max-width: 770px;
+}
+
+/* PRODUCT */
+.product-main-card {
+  position: relative;
+  z-index: 1;
+  padding-top: 56px;
+  text-align: center;
+}
+
+.product-logo {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: -28px;
+  transform: translateX(-50%);
+}
+
+.product-name {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #000;
+  font-size: 28px;
+  line-height: 34px;
+}
+
+.product-short-info {
+  margin-top: 0;
 }
