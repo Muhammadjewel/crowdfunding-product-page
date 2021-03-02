@@ -28,8 +28,10 @@
   --site-bg: #f2f2f2;
   --light-bg: rgba(47, 47, 47, 0.05);
   --grey: #7a7a7a;
+  --opaque-grey: rgba(122, 122, 122, 0.05);
   --accent: #3cb3ab;
   --accent-hover: #147a73;
+  --accent-hover-opaque: rgba(20, 122, 115, 0.05);
 }
 
 html {
@@ -72,6 +74,49 @@ img {
   margin-bottom: 24px;
   border-radius: 8px;
   background-color: #fff;
+}
+
+/* BUTTON */
+.button {
+  display: inline-block;
+  padding: 17px 33px 19px;
+  border-radius: 34px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-decoration: none;
+  text-align: center;
+}
+
+.button:active {
+  opacity: 0.7;
+}
+
+.button-wide {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.button-primary {
+  background-color: var(--accent);
+  color: #fff;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--accent-hover);
+}
+
+.button-bookmark {
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: var(--opaque-grey);
+  color: var(--grey);
+}
+
+.button-bookmark:hover {
+  background-color: var(--accent-hover-opaque);
+  color: var(--accent-hover);
 }
 
 /* SITE-HEADER */
@@ -170,4 +215,11 @@ img {
 
 .product-short-info {
   margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.product-main-card-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
