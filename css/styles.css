@@ -329,6 +329,11 @@ img {
 .pledge {
   padding: 32px;
   padding-top: 38px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.pledge-na {
+  opacity: 0.5;
 }
 
 .pledge-header {
@@ -370,4 +375,18 @@ img {
   color: #000;
   font-size: 32px;
   line-height: 39px;
+}
+
+.button-disabled {
+  display: none;
+}
+
+.pledge-na .button-primary {
+  display: none;
+}
+
+.pledge-na .button-disabled {
+  display: block;
+  background-color: #2f2f2f;
+  color: #fff;
 }
